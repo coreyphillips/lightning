@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [26.06.3] - 2026-07-09: "Quantum-Resistant Lightning Channel III"
+
+This point release updates pyln-proto's coincurve dependency to fix builds with newer scikit-build-core while preserving Python 3.14 compatibility.
+
+### Fixed
+
+- pyln-proto: update the coincurve dependency to fix build failures with newer scikit-build-core while preserving Python 3.14 compatibility. ([#9288])
+
+[#9288]: https://github.com/ElementsProject/lightning/pull/9288
+[26.06.3]: https://github.com/ElementsProject/lightning/releases/tag/v26.06.3
+
 ## [26.06.2] - 2026-06-25: "Quantum-Resistant Lightning Channel II"
 
 This point release if recommended for all minimal OS setups, including docker images, that have no root certificates for TLS installed.
@@ -476,7 +487,7 @@ Note: You should always set `allow-deprecated-apis=false` to test for changes.
 ## [25.09.2] - 2025-11-04: "Hot Wallet Guardian III"
 
 `Bookkeeper` and `xpay` users: please upgrade!
-This point release includes fixes for `xpay`, `bookkeeper` and optimizations for large nodes using `bookkeeper`. 
+This point release includes fixes for `xpay`, `bookkeeper` and optimizations for large nodes using `bookkeeper`.
 
 ### Changed
 
@@ -505,7 +516,7 @@ This point release includes fixes for `xpay`, `bookkeeper` and optimizations for
 [#8636]: https://github.com/ElementsProject/lightning/pull/8636
 [#8639]: https://github.com/ElementsProject/lightning/pull/8639
 [#8642]: https://github.com/ElementsProject/lightning/pull/8642
-[#8649]: https://github.com/ElementsProject/lightning/pull/8649 
+[#8649]: https://github.com/ElementsProject/lightning/pull/8649
 [#8657]: https://github.com/ElementsProject/lightning/pull/8657
 [25.09.2]: https://github.com/ElementsProject/lightning/releases/tag/v25.09.2
 
